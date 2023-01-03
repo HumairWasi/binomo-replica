@@ -28,7 +28,10 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,6 +51,128 @@
 </head>
 
 <body>
+
+  <!--- Login Form --->
+
+
+<!-- Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <ul class="nav" style="justify-content: space-around; text-align: center;">
+        <li class="nav-item" role="presentation">
+          <a href="#" class="link linkForm login-link">Registration</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a href="#" class="link linkForm signup-link">Signup</a>
+        </li>
+      </ul>
+      <hr style="background-color: #4f5059 !important;">
+      <!-- Modal body -->
+      <div class="modal-body">
+        <section class="containerr forms">
+          <div class="form login">
+              <div class="form-content">
+                  <header>Login</header>
+                  <form action="#">
+                      <div class="field input-field">
+                          <input type="email" placeholder="Email" class="input">
+                      </div>
+
+                      <div class="field input-field">
+                          <input type="password" placeholder="Password" class="password">
+                          <i class='bx bx-hide eye-icon'></i>
+                      </div>
+
+                      <div class="form-link">
+                          <a href="#" class="forgot-pass">Forgot password?</a>
+                      </div>
+
+                      <div class="field button-field">
+                          <button>Login</button>
+                      </div>
+                  </form>
+
+                  <div class="form-link">
+                      <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                  </div>
+              </div>
+              <div class="media-options">
+                  <a href="#" class="field facebook">
+                      <i class='bx bxl-facebook facebook-icon'></i>
+                      <span>Login with Facebook</span>
+                  </a>
+              </div>
+
+              <div class="media-options">
+                  <a href="#" class="field google">
+                      <img src="#" alt="" class="google-img">
+                      <span>Login with Google</span>
+                  </a>
+              </div>
+
+          </div>
+
+          <!-- Signup Form -->
+
+          <div class="form signup">
+              <div class="form-content">
+                  <header>Signup</header>
+                  <form action="#">
+                      <div class="field input-field">
+                          <input type="email" placeholder="Email" class="input">
+                      </div>
+
+                      <div class="field input-field">
+                          <input type="password" placeholder="Create password" class="password">
+                      </div>
+
+                      <div class="field input-field">
+                          <input type="password" placeholder="Confirm password" class="password">
+                          <i class='bx bx-hide eye-icon'></i>
+                      </div>
+
+                      <div class="field button-field">
+                          <button>Signup</button>
+                      </div>
+                  </form>
+
+                  <div class="form-link">
+                      <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                  </div>
+              </div>
+              <div class="media-options">
+                  <a href="#" class="field facebook">
+                      <i class='bx bxl-facebook facebook-icon'></i>
+                      <span>Login with Facebook</span>
+                  </a>
+              </div>
+
+              <div class="media-options">
+                  <a href="#" class="field google">
+                      <img src="#" alt="" class="google-img">
+                      <span>Login with Google</span>
+                  </a>
+              </div>
+
+          </div>
+      </section>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
@@ -86,8 +211,8 @@
           </li>
 
           <li><a class="nav-link scrollto">Contact</a></li>
-          <li style="margin-left: 300px;"></li>
-          <li><button class="button-27">Log In</button></li>
+          <li style="margin-left: 300px;" class="Extrali"></li>
+          <li><button class="button-27" data-bs-toggle="modal" data-bs-target="#myModal" >Log In</button></li>
           <li><button class="button-28">Sign Up</button></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -112,7 +237,7 @@
       </div>
     </div> -->
 
-    <div class="container">
+    <div class="container ContainerTop">
       <div class="col-lg-12  align-items-center top-style">
         <div data-aos="zoom-out">
           <h1>Reliable trading partner</h1>
@@ -215,7 +340,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4">
+          <div class="col-lg-4 col-md-4 glass-responsive">
             <div class="" data-aos="zoom-in" data-aos-delay="50">
               <div class="aboutCards glass " style="display: contents;">
                 <h1 class="text-center" style="color:#ffdd3c">130</h1>
@@ -241,7 +366,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4">
+          <div class="col-lg-4 col-md-4  glass-responsive">
             <div class="" data-aos="zoom-in" data-aos-delay="50">
               <div class="aboutCards glass " style="display: contents;">
                 <h1 class="text-center" style="color:#ffdd3c">200Rs</h1>
@@ -821,9 +946,54 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+  <script>
+  $(document).ready(function() {
+    // Jquery code here ///
+    $(function() {
+    $( "#my_dialog" ).dialog({
+    autoOpen: false,
+    position: { my: "right top", at: "right top", of: window }
+    });
+    });
+    $("#b1").click(function(){
+    $( "#my_dialog" ).dialog( "open" );
+    })
+  });
+  const forms = document.querySelector(".forms"),
+      pwShowHide = document.querySelectorAll(".eye-icon"),
+      links = document.querySelectorAll(".link");
+
+pwShowHide.forEach(eyeIcon => {
+    eyeIcon.addEventListener("click", () => {
+        let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+        
+        pwFields.forEach(password => {
+            if(password.type === "password"){
+                password.type = "text";
+                eyeIcon.classList.replace("bx-hide", "bx-show");
+                return;
+            }
+            password.type = "password";
+            eyeIcon.classList.replace("bx-show", "bx-hide");
+        })
+        
+    })
+})      
+
+links.forEach(link => {
+    link.addEventListener("click", e => {
+       e.preventDefault(); //preventing form submit
+       forms.classList.toggle("show-signup");
+    })
+})
+
+    </script>    
+  
 
 </body>
 
